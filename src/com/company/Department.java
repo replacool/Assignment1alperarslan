@@ -28,11 +28,8 @@ public class Department {
     // Erase the content. Fill in the blanks. If name and numberOfWorker are equal, it returns true
     @Override
     public boolean equals(Object obj) {
-        if (obj.equals(name)) {
-            return true;
-        }
 
-        else return obj.equals(numberOfWorker);
+        return this.name.equals(((SoftwareDevelopment)obj).name) && this.numberOfWorker ==((SoftwareDevelopment)obj).numberOfWorker;
 
 
     }
